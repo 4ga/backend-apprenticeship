@@ -1,0 +1,12 @@
+// tests + app, no emit
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node", "vitest"],
+    "noEmit": true
+  },
+  "include": ["src", "test", "vitest.config.mts"],
+  "exclude": ["node_modules"]
+}
