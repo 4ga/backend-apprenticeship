@@ -3,7 +3,9 @@
 ###### A structured backend engineering apprenticeship progressing from HTTP fundamentals to authenticated, multi-tenant APIs with persistent storage and token-based authentication.
 
 #### This repository documents my step-by-step journey from backend fundamentals to production-style API design. Each project builds directly on the previous one, emphasizing correctness, clarity, testing, and real-world patterns.
-# 
+
+#
+
 ### 🧭 Learning Philosophy
 
 - No copy-paste tutorials
@@ -19,6 +21,7 @@
 - Every project explains why, not just how
 
 #
+
 ### 🛠 Tech Stack
 
 - Language: TypeScript
@@ -38,8 +41,11 @@
 - HTTP Testing: Supertest
 
 - Tooling: dotenv, sqlite, jsonwebtoken
+
 #
+
 ### 📁 Project Structure
+
 ```
 backend-apprenticeship/
 ├─ p01-http-basics/
@@ -53,7 +59,9 @@ backend-apprenticeship/
 ```
 
 Each project is self-contained and builds on prior concepts.
+
 #
+
 ### 📚 Projects Overview
 
 P01 – HTTP & Server Fundamentals
@@ -77,6 +85,7 @@ P01 – HTTP & Server Fundamentals
 - Basic server health endpoints
 
 #
+
 ### P02 – Express Routing & Controllers
 
 #### Focus:
@@ -98,6 +107,7 @@ P01 – HTTP & Server Fundamentals
 - Express middleware flow
 
 #
+
 ### P03 – Errors, Validation & Middleware
 
 #### Focus:
@@ -117,6 +127,7 @@ P01 – HTTP & Server Fundamentals
 - Defensive API design
 
 #
+
 ### P04 – In-Memory Todo API
 
 #### Focus:
@@ -136,6 +147,7 @@ P01 – HTTP & Server Fundamentals
 - Deterministic behavior
 
 #
+
 ### P05 – SQLite Persistence
 
 #### Focus:
@@ -157,6 +169,7 @@ P01 – HTTP & Server Fundamentals
 - Repository pattern
 
 #
+
 ### P06 – Authentication System
 
 #### Focus:
@@ -177,7 +190,8 @@ P01 – HTTP & Server Fundamentals
 
 - Secure credential handling
 
-# 
+#
+
 ### P07 – Auth-Protected Multi-Tenant Todos
 
 #### Focus:
@@ -199,6 +213,26 @@ P01 – HTTP & Server Fundamentals
 - Production-style API behavior
 
 #
+
+### P08 – Auth-Protected RBAC Todos
+
+#### Focus:
+
+- Role-Based Authorization (RBAC) with admin-only routes
+- Cascading deletes (users -> todos + refresh tokens)
+- Per-user data isolation
+- Protected routes
+- Logout-all functionality
+
+#### Key Concepts:
+
+- Multi-tenant security
+- Ownership enforcement
+- Token-based authorization
+- Production-style API behavior
+
+#
+
 ### 🧪 Testing Strategy
 
 - All projects include automated tests
@@ -237,13 +271,15 @@ P01 – HTTP & Server Fundamentals
 
 | Project | Persistence | Auth | Multi-user | Production Patterns |
 | ------- | ----------- | ---- | ---------- | ------------------- |
-| P01     | ❌           | ❌    | ❌          | ❌               |
-| P04     | ❌           | ❌    | ❌          | ⚠️               |
-| P05     | ✅           | ❌    | ❌          | ✅               |
-| P06     | ✅           | ✅    | ❌          | ✅               |
-| P07     | ✅           | ✅    | ✅          | ✅               |
+| P01     | ❌          | ❌   | ❌         | ❌                  |
+| P04     | ❌          | ❌   | ❌         | ⚠️                  |
+| P05     | ✅          | ❌   | ❌         | ✅                  |
+| P06     | ✅          | ✅   | ❌         | ✅                  |
+| P07     | ✅          | ✅   | ✅         | ✅                  |
+| P08     | ✅          | ✅   | ✅         | ✅                  |
 
 #
+
 ### 🚀 Next Steps
 
 #### Planned future projects:
@@ -257,6 +293,7 @@ P01 – HTTP & Server Fundamentals
 - P11+: Production deployment & scaling patterns
 
 #
+
 ### 👤 About This Repository
 
 This repository represents a deliberate backend engineering apprenticeship, focused on building professional instincts, not just features.
@@ -272,6 +309,7 @@ This repository represents a deliberate backend engineering apprenticeship, focu
 - Real-world applicability
 
 #
+
 ### 📄 License
 
 MIT
