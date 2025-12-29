@@ -55,6 +55,7 @@ backend-apprenticeship/
 ├─ p05-sqlite-persistence/
 ├─ p06-authentication/
 ├─ p07-auth-protected-todos/
+├─ p08-auth-rbac-todos/
 └─ README.md
 ```
 
