@@ -56,6 +56,7 @@ backend-apprenticeship/
 ├─ p06-authentication/
 ├─ p07-auth-protected-todos/
 ├─ p08-auth-rbac-todos/
+├─ p09-auth-logging-todos/
 └─ README.md
 ```
 
@@ -234,6 +235,35 @@ P01 – HTTP & Server Fundamentals
 
 #
 
+### P09 – Auth-Protected Logging Todos
+
+The API records immutable audit events for security-sensitive actions:
+
+- Authentication lifecycle (login, refresh, logout)
+- Admin operations (user deletion, role changes)
+- Cross-tenant access by admins
+
+Audit logs are stored independently of domain entities to ensure historical integrity even after user deletion.
+
+#### Focus:
+
+- Role-Based Authorization (RBAC) with admin-only routes
+- Cascading deletes
+- Per-user data isolation
+- Admin tooling
+- Protected routes
+- Logout-all functionality
+
+#### Key Concepts:
+
+- Multi-tenant security
+- Ownership enforcement
+- Token-based authorization
+- Audit logging with survival history
+- Production-style API behavior
+
+#
+
 ### 🧪 Testing Strategy
 
 - All projects include automated tests
@@ -278,6 +308,7 @@ P01 – HTTP & Server Fundamentals
 | P06     | ✅          | ✅   | ❌         | ✅                  |
 | P07     | ✅          | ✅   | ✅         | ✅                  |
 | P08     | ✅          | ✅   | ✅         | ✅                  |
+| P09     | ✅          | ✅   | ✅         | ✅                  |
 
 #
 
