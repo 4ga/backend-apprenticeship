@@ -264,6 +264,31 @@ Audit logs are stored independently of domain entities to ensure historical inte
 
 #
 
+### P10 – Soft deletes
+
+#### Focus:
+
+- Soft deletes for users and todos
+- Query-level visibility control (includeDeleted)
+- Admin-only access to sensitive historical data
+- Consistent filtering across:
+  - auth (`findUserByEmail`, `findUserById`),
+  - admin views
+  - todo queries
+- Audit logging that survives deletes
+- No referential integrity hacks (let data live, not vanish)
+
+#### Key Concepts:
+
+- Soft deletes
+- Multi-tenant security
+- Ownership enforcement
+- Token-based authorization
+- Audit logging with survival history
+- Production-style API behavior
+
+#
+
 ### 🧪 Testing Strategy
 
 - All projects include automated tests
@@ -309,6 +334,7 @@ Audit logs are stored independently of domain entities to ensure historical inte
 | P07     | ✅          | ✅   | ✅         | ✅                  |
 | P08     | ✅          | ✅   | ✅         | ✅                  |
 | P09     | ✅          | ✅   | ✅         | ✅                  |
+| P10     | ✅          | ✅   | ✅         | ✅                  |
 
 #
 
